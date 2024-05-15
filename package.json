@@ -1,0 +1,33 @@
+{
+  "name": "react2",
+  "version": "1.0.0",
+  "description": "this is react 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rohit1391/react2.git"
+  },
+  "keywords": [
+    "This",
+    "is",
+    "a",
+    "react"
+  ],
+  "author": "rk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rohit1391/react2/issues"
+  },
+  "homepage": "https://github.com/Rohit1391/react2#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
