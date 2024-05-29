@@ -4,7 +4,9 @@
     border: 1px solid black;
     justify-content: space-between;
     background-color: antiquewhite;
-
+    margin-left: 10px;
+    margin-right: 10px;
+  
     
 }
 .logo{
@@ -47,9 +49,93 @@
     cursor: pointer;
   }
   .item-card {
-    height: 200px;
-    width: 150px;
+    position: relative;
+    height: 250px;
+    width: calc(33.33% - 20px); /* 33.33% width minus margin for spacing */
     border: 1px solid black;
-    margin-top: 20px;
-    background-color: darkgoldenrod;
+    background-color: #F4A460; /* Sandy Brown */
+    cursor: pointer;
+    margin: 10px; /* Margin for spacing between cards */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    border-radius: 10px;
+  }
+  
+  .card-text {
+    margin: 0 auto; 
+    position: absolute; 
+    bottom: 10px; 
+    text-align: center;
+    width: 100%; 
+  }
+  
+  .item-card:hover {
+    border: 2px solid blue;
+  }
+  
+  .itemscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes space between cards */
+    margin: 0 auto; /* Center the container */
+    max-width: 1000px; /* Adjust based on your layout needs */
+    padding: 10px;
+  }
+  
+  .img-logo {
+    max-width: 90%; /* Ensure image fits within the card */
+    height: 180px;
+     margin-left: 5px;
+     margin-right: 5px;
+  }
+  
+  .body {
+    background-color: #54eafe; /* Change to your desired background color */
+    padding: 20px; /* Optional: Add some padding for better spacing */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  
+  .suggestion {
+    font-style: normal;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  .dropdown-container {
+    text-align: center;
+  }
+  
+  .category-dropdown {
+    margin-top: 40px;
+    /* width: 150px; Set the width of the dropdown */
+    padding: 8px; /* Add padding for better appearance */
+    font-size: 16px; /* Set the font size */
+    border: 2px solid #007bff; /* Add border */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    background-color: #f8f9fa; /* Set background color */
+    color: #333; /* Set text color */
+    appearance: none; /* Remove default dropdown arrow */
+  }
+  
+  .category-dropdown:hover {
+    border-color: #0056b3; /* Change border color on hover */
+  }
+  
+  .category-dropdown:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add focus style */
+  }
+  
+  /* Style the options */
+  .category-dropdown option {
+    background-color: #f8f9fa; /* Set background color */
+    color: #333; /* Set text color */
+  }
+  
+  /* Style the selected option */
+  .category-dropdown option:checked {
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
   }
